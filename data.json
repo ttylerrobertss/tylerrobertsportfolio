@@ -93,9 +93,8 @@
    "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/ab3aaa43-f863-43f4-a2fc-90ad4a571106/Screenshot+2026-05-08+at+8.21.35%E2%80%AFPM.png",
    "videos": [
     {
-     "provider": "vimeo",
-     "id": "1146707841",
-     "hash": "6cfbe3d218"
+     "provider": "youtube",
+     "id": "mitvIWr8Tvg"
     }
    ],
    "gallery": []
@@ -107,8 +106,8 @@
    "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/a435d5d9-b3bc-44bd-86e7-23a431323915/Screenshot+2026-05-08+at+8.30.50%E2%80%AFPM.png",
    "videos": [
     {
-     "provider": "vimeo",
-     "id": "558216536"
+     "provider": "youtube",
+     "id": "62z9MncNweI"
     }
    ],
    "gallery": []
