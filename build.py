@@ -75,6 +75,8 @@ def video_embed(video, title):
         src = f"https://www.youtube-nocookie.com/embed/{video_id}"
     elif provider == "vimeo":
         src = f"https://player.vimeo.com/video/{video_id}"
+        if video.get("hash"):
+            src += f"?h={video['hash']}"
     else:
         return ""
     return f"""<div class="video-wrap">

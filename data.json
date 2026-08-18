@@ -94,7 +94,8 @@
    "videos": [
     {
      "provider": "vimeo",
-     "id": "1146707841"
+     "id": "1146707841",
+     "hash": "6cfbe3d218"
     }
    ],
    "gallery": []
