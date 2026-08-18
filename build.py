@@ -29,8 +29,9 @@ def footer(depth=0):
     <span>&copy; {SITE_NAME}</span>
   </footer>"""
 
-def page(title, body, active, depth=0, extra_head=""):
+def page(title, body, active, depth=0, extra_head="", show_footer=False):
     prefix = "../" * depth
+    footer_html = footer(depth) if show_footer else ""
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -43,7 +44,7 @@ def page(title, body, active, depth=0, extra_head=""):
 <body>
   {header(active, depth)}
   {body}
-  {footer(depth)}
+  {footer_html}
   <script src="{prefix}assets/js/main.js"></script>
 </body>
 </html>
@@ -66,7 +67,7 @@ home_body = f"""<main class="wrap">
   </main>"""
 
 with open(os.path.join(ROOT, "index.html"), "w") as f:
-    f.write(page(SITE_NAME, home_body, "portfolio", depth=0))
+    f.write(page(SITE_NAME, home_body, "portfolio", depth=0, show_footer=True))
 
 # ---------- Project pages ----------
 def video_embed(video, title):
