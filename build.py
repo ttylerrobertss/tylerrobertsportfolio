@@ -69,21 +69,39 @@ with open(os.path.join(ROOT, "index.html"), "w") as f:
     f.write(page(SITE_NAME, home_body, "portfolio", depth=0))
 
 # ---------- Project pages ----------
-for p in data["projects"]:
-    provider = p["provider"]
-    video_id = p["videoId"]
-    if provider == "youtube" and video_id:
-        media = f"""<div class="video-wrap">
-        <iframe src="https://www.youtube-nocookie.com/embed/{video_id}" title="{html.escape(p['title'])}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
-      </div>"""
-    elif provider == "vimeo" and video_id:
-        media = f"""<div class="video-wrap">
-        <iframe src="https://player.vimeo.com/video/{video_id}" title="{html.escape(p['title'])}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-      </div>"""
+def video_embed(video, title):
+    provider, video_id = video["provider"], video["id"]
+    if provider == "youtube":
+        src = f"https://www.youtube-nocookie.com/embed/{video_id}"
+    elif provider == "vimeo":
+        src = f"https://player.vimeo.com/video/{video_id}"
     else:
+        return ""
+    return f"""<div class="video-wrap">
+        <iframe src="{src}" title="{html.escape(title)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+      </div>"""
+
+for p in data["projects"]:
+    videos = p.get("videos", [])
+    gallery = manifest.get("gallery", {}).get(p["slug"], [])
+
+    if len(videos) == 0:
         media = '<div class="no-video"><span>Coming soon</span></div>'
+    elif len(videos) == 1:
+        media = video_embed(videos[0], p["title"])
+    else:
+        embeds = "".join(video_embed(v, p["title"]) for v in videos)
+        media = f'<div class="video-multi">{embeds}</div>'
 
     desc_html = html.escape(p["desc"]).replace("\n", "<br>") if p["desc"] else ""
+
+    gallery_html = ""
+    if gallery:
+        gallery_imgs = "".join(
+            f'<img src="../../assets/img/gallery/{p["slug"]}/{fname}" alt="{html.escape(p["title"])}" loading="lazy">'
+            for fname in gallery
+        )
+        gallery_html = f'<div class="project-gallery">{gallery_imgs}</div>'
 
     body = f"""<main class="wrap">
     <a class="back-link" href="../../index.html">&larr; back to portfolio</a>
@@ -94,6 +112,7 @@ for p in data["projects"]:
         <div class="desc">{desc_html}</div>
       </div>
     </div>
+    {gallery_html}
   </main>"""
 
     outdir = os.path.join(ROOT, "portfolio", p["slug"])

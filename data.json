@@ -1,74 +1,400 @@
 {
-  "projects": [
-    { "slug": "reel", "title": "Demo Reel", "provider": "youtube", "videoId": "GpAqMTd4_K8", "desc": "A selection of work spanning genres, formats, and productions across the globe.", "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/91849e21-22e2-4106-82b0-34bf88188a83/frame_2472.jpg" },
-    { "slug": "cso", "title": "CSO", "provider": "youtube", "videoId": "siHSaSIalSY", "desc": "Production Company - Oddbeast\nDirector - TJ Bitter\nProducer - Gracie Markus\nDP - Tyler Roberts\nAC - Lydia Supinger\nGrip - Tanner Neal\nGrip - Zach Schutte", "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/d2969e00-0007-4dc2-97e4-7906ab130064/Screenshot+2026-05-08+at+7.42.51%E2%80%AFPM.png" },
-    { "slug": "freehair", "title": "Free Hair", "provider": "youtube", "videoId": "j5U5WkLznu8", "desc": "Dir Ashley Hill + Blake Roberts\nProducer - Maddie Kelly\nDP - Tyler Roberts\nGrip - Noah Reilly\nCreative Director / Photographer - Nick Smith", "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/50280f9c-1246-4208-8a1b-bad5c4c00287/frame_743.jpg" },
-    { "slug": "ccr", "title": "CCR - Bad Moon Rising", "provider": "youtube", "videoId": "7_2zLFTp_e4", "desc": "Biker - Jerry Mullins\nDirector, Producer, Editor - Jack Campise\nDirector of Photography - Tyler Roberts\nAssistant Camera - Lydia Supinger\nColorist - Rachel Angaran\nVFX - Mack Lawrence", "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/8a459606-0151-4322-9834-9f5ae369fbee/BadMoonRising_FinalStills_TIFF_Still_53_00001421.jpg" },
-    { "slug": "blackbird", "title": "Black Bird", "provider": "youtube", "videoId": "0hoLVKRps3w", "desc": "Dir - Lydia Supinger\nProducer - Maddie Kelly\nDP - Tyler Roberts\nGaffer - Matthew Badea\nKey Grip - Deric Hellwig\nGrip - Hudson Armstrong\nGrip - Justus Guard\nGrip - Patrick Buescher\nEdit - Kelsey Seurkamp / Henry Czerwonka\nColor - Matthew Badea\n500T Dev+Scan - Kodak NYC\nCamera supplied by The Camera Dept", "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/cb5a2a1b-1752-4917-82b1-4b48f9aefeac/frame_3230.jpg" },
-    { "slug": "stoopdayz", "title": "Stoop Dayz", "provider": "vimeo", "videoId": "1146707841", "desc": "Production Co - Rooted\nCreative Director - Michael Millay\nProducer - Patty Salas\nDP - Tyler Roberts\nGaffer - Trav Thompson", "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/ab3aaa43-f863-43f4-a2fc-90ad4a571106/Screenshot+2026-05-08+at+8.21.35%E2%80%AFPM.png" },
-    { "slug": "the-end", "title": "Feral Presents: The End", "provider": "vimeo", "videoId": "558216536", "desc": "Directed by: Seth Halter\nDirector of Photography: Tyler Roberts\nGaffer and AC: Noah Vaniglia\nEdited by Seth Halter and Caleb Halter\nPost Production and Graphics: Caleb Halter\nExecutive Producer: Caleb Halter\nExecutive Producer: Seth Halter\nFilm processing by @negativelandfilm\nCameras supplied by: @thecameradepartment", "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/a435d5d9-b3bc-44bd-86e7-23a431323915/Screenshot+2026-05-08+at+8.30.50%E2%80%AFPM.png" },
-    { "slug": "losttime", "title": "Lost Time", "provider": "youtube", "videoId": "B6HA605A_p8", "desc": "Director - David Albanese\nProducer - Nakita Blodgett\nAD - Ben Saunders\n1 AC - Drew Defosset\n1 AC - Matt Henkes\n1 AC - Fabio Souza\n2nd AC - Sam Storm\nA Cam - Dave Schwander\nB Cam - Dan Roark\nC Cam - Micah Simms\nD Cam - Lydia Supinger\nE Cam - Dan Marque\nF Cam - Ben Phillips\nG - Peyton Johnson\nH - Brandon Weaver\nI - Taylor Davis\nJ - Zach Daulton\nTechno - Eon Mora\nDolly Grip - Jake Storm\nDolly Grip - Matthew Badea\nBTS - Hudson Armstrong\nGaffer - Andy Thomas\nKey Grip - Jeff Fisher", "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/e9add768-b8e7-41ae-9495-cb1a0dff0ad9/Screenshot+2026-05-08+at+9.19.51%E2%80%AFPM.png" },
-    { "slug": "joy", "title": "In His Image", "provider": "youtube", "videoId": "wuhICK5jvJg", "desc": "Dir - Lydia Supinger\nDP - Tyler Roberts\nGrip - Hudson Armstrong\nCreative Direction: Logan Peele", "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/df1bb78a-0872-4cf4-91cd-31a438d46112/frame_86724.jpg" },
-    { "slug": "restavek", "title": "Restavek", "provider": "youtube", "videoId": "_B7ya1L6i8A", "desc": "Right now there are children in Haiti stuck in a generational system of slavery. Sponsor a child at restavekfreedom.org\n\nDIR - Rach Perin\nProducer - Emily Diehl\nDP - Tyler Roberts\nA CAM - Noah Vaniglia\nB CAM - Deric Hellwig\nLocation Sound - Patrick Beuscher\nEdit - Deric Hellwig\nColor - Noah Vaniglia\n\nRentals from The Camera Dept.", "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/3ea36b8a-e709-4fad-b203-69a320c8475d/IMG_0125.JPG" },
-    { "slug": "hunger", "title": "Hunger Corp", "provider": "vimeo", "videoId": "1001280980", "desc": "Dir - Rach Perin\nProducer - Nakita Blodgett\nDP - Tyler Roberts\n1 AC/Loader - Lydia Supinger\nLocation Sound - Patrick Beuscher", "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/b50ad625-09a0-4764-a7c8-6f53a29fbb74/Screenshot+2024-04-03+at+3.25.57%E2%80%AFPM.jpeg" },
-    { "slug": "the-calling", "title": "The Calling", "provider": "youtube", "videoId": "8hO9uVy2jVo", "desc": "Dir - Rach Perin\nTri X Developed and scanned by Negativeland", "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/f1ef456a-2a03-4692-a4f4-30e53eae3620/frame_471.jpg" },
-    { "slug": "nepal", "title": "Nepal", "provider": "youtube", "videoId": "uBC9t0ebNCk", "desc": "Dir - Rach Perin\nProd - Nakita Blodgett\nDP - Tyler Roberts\nAC - Lydia Supinger\nLocation Sound - Micah Drushal", "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/9e502cd7-9654-4e30-bade-2981e0e2c7ee/frame_1035.jpg" },
-    { "slug": "btfsa", "title": "Build The Future", "provider": "youtube", "videoId": "__pnGJLL8Hc", "desc": "Dir - Rach Perin\nProd - Nakita Blodgett\nDP - Tyler Roberts\nAC Loader - Lydia Supinger\nAudio - Deric Hellwig\nKodak 250D Developed and Scanned by Negativeland", "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/96d26dd8-e3d4-4aa0-985e-d4ba84a135ef/frame_944.jpg" },
-    { "slug": "wcig", "title": "What Color is God?", "provider": "youtube", "videoId": "8hO9uVy2jVo", "desc": "Right now there are children in Haiti stuck in a generational system of slavery. Sponsor a child at restavekfreedom.org\n\nDIR - Jennie Chacon\nProducer - Nakita Blodgett\nDP - Tyler Roberts\n1 AC - Drew Defosset\n2 AC - Sam Storm\nKey Grip - Jake Storm\nGrip - Ben Phillips\nChoreographer - Paula Rakestraw", "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/02124252-c09a-48a2-bac9-5864737967aa/Screenshot+2026-05-08+at+7.55.57%E2%80%AFPM.png" },
-    { "slug": "aro", "title": "Appalachia Story", "provider": "youtube", "videoId": "GfsIlhpRaMM", "desc": "Dir - Rach Perin\nProducer - Nakita Blodgett\nDP - Tyler Roberts\nA Cam - Noah Vaniglia\n1 AC - Drew Defosset\nGrip - Deric Hellwig\nLocation Sound - Patrick Beuscher", "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/0bf57e99-39bd-4368-a4f2-87c3eb8e2eda/Screenshot+2026-05-08+at+8.10.47%E2%80%AFPM.png" },
-    { "slug": "qcd", "title": "Queen City Disco", "provider": "youtube", "videoId": "HODJRBdwHpM", "desc": "Director - Tyler Hill\nProducer - Maddie Kelly\nDP - Tyler Roberts", "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/9fa3887b-c0a2-42c5-af31-1606924b5193/frame_87.jpg" },
-    { "slug": "locke", "title": "Locke Coffee", "provider": "youtube", "videoId": "o0r8a2gxVpM", "desc": "", "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/8a84334a-d6f0-49dc-b92b-b8c32dc03d1e/LockeNightBefore-2840.jpg" },
-    { "slug": "bts", "title": "BTS", "provider": "youtube", "videoId": "3fOiYxlrN3g", "desc": "ENJOY THE PROCESS", "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/25c5d947-5c9c-4d37-a507-2f89c86ffbcb/Screenshot+2026-05-08+at+8.32.59%E2%80%AFPM.png" },
-    { "slug": "man-camp", "title": "Man Camp", "provider": "youtube", "videoId": "kUwsbOrHJhI", "desc": "Dir - Matt Arena\nProducer - Alan Imber\nLive Director - David Albanese\nDP - Tyler Roberts\n1 AC - Fabio Souza\nA Cam - Luke Fletcher\nB Cam - Ben Nelson\nC Cam - Taylor Davis\nD Cam - Zach Schutte\nE Cam - Sam Stephenson\nF Cam - Collin Jung\nEdit - Chris Wallbrech\nDIT - Josh Curington\nAudio - Troy Howard\nPA - Owen Herman", "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/0a6ecfe8-8afd-4c1e-9998-422d3cbc59c0/Screenshot+2026-05-09+at+4.19.20%E2%80%AFPM.png" },
-    { "slug": "seu", "title": "Wild Rushing Wind - Live Video", "provider": "youtube", "videoId": "ra2Ic5CAtTI", "desc": "SEU Worship, Caylie Bryant - Wild Rushing Wind", "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/50bdc878-b506-4023-9d51-4e52f7531284/Screenshot+2026-07-02+at+3.29.41%E2%80%AFPM.png" },
-    { "slug": "ignite", "title": "Ignite Intro", "provider": null, "videoId": null, "desc": "Coming soon!", "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/12a14a31-99ce-42f7-8d27-27c08c36188f/frame_89740.jpg" }
-  ],
-  "bts": [
-    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925165529-JT2ZMKXY9TMN4O6RGQEW/DSCF8951.jpeg",
-    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1663770477716-7474WTX23BNLLBHOFJ91/DSCF4992.jpg",
-    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1770505837553-6C4KASE18OA8ZJZLKRZ6/DSCF4140.jpeg",
-    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1663770694224-QEJAH5B0PL6LO3K0QA0Q/IMG_4977.jpg",
-    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925159284-HZUHW6EZVBGIIYELWTF3/8AE299FD-768A-46E8-80BF-C0A301BF1C6A-20C23865-19DE-48A5-AC24-27E89729FB78.jpeg",
-    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1778289297226-GZG6TKZ3QTDMOX0G6EE8/IMG_5395.JPG",
-    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925165275-VNQ4BHK4VSNL1VT9NV8K/DSCF8892.jpg",
-    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925160906-K5FDNDJ8NNKSNR4SNS5N/77C65A18-509B-47DB-B5CC-75FA437A1179-2636-00000100ADE3F579.jpeg",
-    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1701135938057-8H8FWGD8KN7FZUVIYDGJ/95BB8DCE-E11A-4083-BD0A-BA7F089A857B.jpg",
-    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1770505894973-AEH7FAA9Z3SZBT25LTW3/DSCF2547.JPG",
-    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1701135936918-TVHFT3DWXASX4K32HP6B/0ABBA41F-9FB4-4545-837E-2B1C7A06A698.jpg",
-    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925157566-9QUSY8KZGG25FWWD2XNJ/3BF6175D-D7AA-48F1-9EF2-7B6175E25E1D-13936-0000047710D6AC9C.JPG",
-    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925175946-6FXI1I0S9RE113G67H53/img455.jpeg",
-    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925160251-AO52LE4BJTM6FQSXG27K/067AF39E-7FF7-4A77-B554-11DFC8EC55D5-461-0000000DC8FDDB7B.jpg",
-    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1770505978970-XIBYOLT8KPVF9C0R862O/IMG_0301.JPG",
-    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1701135938540-XEJZNICTTJ27WP6SA7CG/74681F38-A30E-4D37-9600-786330E6EFD8.jpg",
-    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925793376-I08DQUDZKS7HGQ5VRE3U/IMG_1356.JPG",
-    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1770506897608-V1O30GMR0DAHQ0BXDNOF/2023-98.jpg",
-    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1701135939494-T2ESKAPCLA5PCVVKQDMT/IMG_7577.jpeg",
-    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925163428-R57146FS6BHMHQEU5N0D/A5D65F25-7CBC-40A7-8D9D-E39425006184-22281-00000C2FDCC40080.JPG",
-    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925166355-IH7W0WM6NPP4YZCU1UOK/E8D21D06-716B-4000-A4D6-1C70A1E09515-297CAAFA-3B58-426E-ABAC-37E69AC45ECE.jpeg",
-    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1770505982953-YWRJH5XJCFB3YNY49ZOU/IMG_3489.JPG",
-    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925163673-KDWSDLR1EY8S52YZFCV9/C9AA8FE7-2F18-425F-BE46-36B3818FB9AF-14239-000004819EC52460.JPG",
-    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925163051-80LCYBKCMSO7JQCSR1OJ/62577465019__57ED5B52-4162-4939-970C-5C5FFB3B4472.jpeg",
-    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925162800-5NSTSDKSPLB6MB54NFVJ/26027986-2036-4403-99C6-4C32AD992E7E-19866-000008DAE9C126BD.jpg",
-    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925793375-S5WJXMDJZOZPJ3KWBTX5/IMG_1553.JPG",
-    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925158396-I0J76HB50N1YGQQP59TZ/5B47B4E8-9ADE-45B2-97C8-7A2EC3B7D6CA-14239-0000048218822232.jpeg",
-    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925164241-A9RWRWQ5RSR85TEF5V0S/CB3984E0-A6A5-4DA6-AC00-45E205E013C9.jpeg",
-    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925164502-8JWEC0QCZ8H03O7OW1OB/DSCF8652.jpg",
-    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925161516-3MFMZ91LRAFHNMNQFEPY/8554ADA9-88E9-45C3-B00B-6E9901E47C43-4251-0000024C4B4DC456.jpeg",
-    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925171967-12SZB9D22NGI89SQHTWI/IMG_8011.JPG",
-    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925167057-X6UJWWAFKTMJ09EBFCC6/EBE5895D-FD54-4925-9B36-627F4707D09D-3BC2F8A3-04A3-40CA-9672-6C79EE2599CA.jpeg",
-    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925167438-M8WUP2QXFIK3E7UY7BTA/IMG_0290.jpg",
-    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925167696-ICH73ZRH3DSNZVP2VUE2/IMG_1739.jpeg",
-    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925169820-TZGQSN1KAYPL27UH919M/IMG_8895.jpeg",
-    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925172107-I3BWQD0QVSQRSBEFO9J9/IMG_9535.jpeg",
-    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925160075-UVB85ZVBIYJ8YX7LZPCW/63DD2DEA-D00C-4F3B-AEEA-9605D672A71F-8F6B48B3-5DC5-4B28-8B2D-F88245380ACC.jpeg",
-    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925173077-PCSZMV8UGY42YJ5SYQG9/IMG_9813.JPG",
-    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925176556-0XMM5Z73WMIYKH9QJ4UK/Screen%2BShot%2B2021-08-24%2Bat%2B8.39.22%2BPM.png",
-    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1701135937376-YDHEL72T8DACHYCVEABO/94C8BCBC-68A3-4905-8DA7-02F1284D6C7F.jpg",
-    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1778289299239-BAW7JHA35HGI6PEG29J0/IMG_5397.JPG",
-    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1778289297522-UAEYK5CEF76JZXCVIQ3V/IMG_5396.JPG"
-  ],
-  "contact": {
-    "bio": "I’m a Director of Photography focused on cinematic storytelling across film, virtual production, and live environments. Whether shooting on 16mm, 35mm, or digital cinema systems, I bring a film-first approach to lighting, movement, and visual tone.",
-    "headshot": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/7ed06a17-2285-4fc6-99c1-a7ef3211fb87/1711034851977.jpeg"
+ "projects": [
+  {
+   "slug": "reel",
+   "title": "Demo Reel",
+   "desc": "A selection of work spanning genres, formats, and productions across the globe.",
+   "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/91849e21-22e2-4106-82b0-34bf88188a83/frame_2472.jpg",
+   "videos": [
+    {
+     "provider": "youtube",
+     "id": "GpAqMTd4_K8"
+    }
+   ],
+   "gallery": []
+  },
+  {
+   "slug": "cso",
+   "title": "CSO",
+   "desc": "Production Company - Oddbeast\n\nDirector - TJ Bitter\n\nProducer - Gracie Markus\n\nDP - Tyler Roberts\n\nAC - Lydia Supinger\n\nGrip- Tanner Neal\n\nGrip- Zach Schutte",
+   "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/d2969e00-0007-4dc2-97e4-7906ab130064/Screenshot+2026-05-08+at+7.42.51%E2%80%AFPM.png",
+   "videos": [
+    {
+     "provider": "youtube",
+     "id": "siHSaSIalSY"
+    }
+   ],
+   "gallery": []
+  },
+  {
+   "slug": "freehair",
+   "title": "Free Hair",
+   "desc": "Dir Ashley Hill + Blake Roberts\n\nProducer - Maddie Kelly\n\nDP - Tyler Roberts\n\nGrip - Noah Reilly\n\nCreative Director / Photographer - Nick Smith",
+   "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/50280f9c-1246-4208-8a1b-bad5c4c00287/frame_743.jpg",
+   "videos": [
+    {
+     "provider": "youtube",
+     "id": "j5U5WkLznu8"
+    }
+   ],
+   "gallery": [
+    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/5e0cbcfa-f712-4914-a079-1d27dc79ba73/6973-01.jpg",
+    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/9602975b-e621-4641-83c0-64a0ecd688da/6973-02.jpg",
+    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/e3d3c910-55f3-49da-91bb-763d11ca65ca/6976-15.jpg",
+    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/76a1a805-81b8-4758-aea5-138522604bac/6973-03.jpg",
+    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/d65e342c-6131-40a4-aac4-ae7a5a0436c9/6973-04.jpg",
+    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/62bf4e89-f13b-4ac9-875c-9ccff8dd9703/6976-13.jpg",
+    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/74427e21-a52f-4b13-93ee-aa66ff67711c/6973-05.jpg",
+    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1857c858-6bc5-4e9c-bf1a-265bf8270e3f/6973-06.jpg",
+    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/c0d87d95-3966-4298-9d58-fe2df0a84d24/6973-07.jpg",
+    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/722c2aa6-c3b7-4771-ac92-751ad48a6660/6973-09.jpg",
+    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1adb3b8b-c21b-4ae8-8f49-553308ef8a8a/6973-14.jpg",
+    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/f02d4ff4-4c15-4e1f-b3eb-64054f0de1c9/6973-10.jpg",
+    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/ae1fd397-54c4-428b-bd46-9c0ca11b2016/6973-11.jpg",
+    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/7c88b5ed-722d-4140-bfc9-4b6f0ac9e800/6973-12.jpg",
+    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/52ebf40f-8c50-4e14-9dd3-c3bcf210e1cf/6973-13.jpg",
+    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/5d42672a-03cb-42b6-947b-6386b7bf7d15/6973-16.jpg",
+    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/07eb7b0b-0e86-408b-aeb2-a2cfb51d63d1/6976-16.jpg",
+    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/efd76661-464e-4d4d-90d6-8b2fbcd18f62/6973-15.jpg",
+    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/4ce8c428-63d3-420d-b4f1-cf8f1310129e/6976-18.jpg",
+    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/f0622697-61d6-4a1e-9b85-08292ae02327/6976-19.jpg"
+   ]
+  },
+  {
+   "slug": "ccr",
+   "title": "CCR - Bad Moon Rising",
+   "desc": "Biker - Jerry Mullins\n\nDirector, Producer, Editor - Jack Campise\n\nDirector of Photography - Tyler Roberts\n\nAssistant Camera - Lydia Supinger\n\nColorist- Rachel Angaran\n\nVFX - Mack Lawrence",
+   "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/8a459606-0151-4322-9834-9f5ae369fbee/BadMoonRising_FinalStills_TIFF_Still_53_00001421.jpg",
+   "videos": [
+    {
+     "provider": "youtube",
+     "id": "7_2zLFTp_e4"
+    }
+   ],
+   "gallery": []
+  },
+  {
+   "slug": "blackbird",
+   "title": "Black Bird",
+   "desc": "Dir  Lydia Supinger\n\nProducer - Maddie Kelly\n\nDP - Tyler Roberts\n\nGaffer - Matthew Badea\n\nKey Grip - Deric Hellwig\n\nGrip - Hudson Armstrong\n\nGrip - Justus Guard\n\nGrip - Patrick Buescher\n\nEdit - Kelsey Seurkamp/Henry Czerwonka\n\nColor - Matthew Badea\n\n500T Dev+Scan - Kodak NYC\n\nCamera supplied by The Camera Dept",
+   "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/cb5a2a1b-1752-4917-82b1-4b48f9aefeac/frame_3230.jpg",
+   "videos": [
+    {
+     "provider": "youtube",
+     "id": "0hoLVKRps3w"
+    }
+   ],
+   "gallery": []
+  },
+  {
+   "slug": "stoopdayz",
+   "title": "Stoop Dayz",
+   "desc": "Production Co - Rooted Creative\n\nDirector - Michael Millay\n\nProducer - Patty Salas\n\nDP - Tyler Roberts\n\nGaffer - Trav Thompson",
+   "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/ab3aaa43-f863-43f4-a2fc-90ad4a571106/Screenshot+2026-05-08+at+8.21.35%E2%80%AFPM.png",
+   "videos": [
+    {
+     "provider": "vimeo",
+     "id": "1146707841"
+    }
+   ],
+   "gallery": []
+  },
+  {
+   "slug": "the-end",
+   "title": "Feral Presents: The End",
+   "desc": "Directed by: Seth HalterDirector of Photography: Tyler RobertsGaffer and AC: Noah VanigliaEdited by Seth Halter and Caleb HalterPost Production and Graphics Caleb HalterExecutive Producer: Caleb HalterExecutive Producer: Seth HalterFilm processing by @negativelandfilmCameras supplied by: @thecameradepartment",
+   "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/a435d5d9-b3bc-44bd-86e7-23a431323915/Screenshot+2026-05-08+at+8.30.50%E2%80%AFPM.png",
+   "videos": [
+    {
+     "provider": "vimeo",
+     "id": "558216536"
+    }
+   ],
+   "gallery": []
+  },
+  {
+   "slug": "losttime",
+   "title": "Lost Time",
+   "desc": "Director - David Albanese\n\nProducer- Nakita Blodgett\n\nAD - Ben Saunders\n\n1 AC - Drew Defosset\n\n1 AC - Matt Henkes\n\n1 AC - Fabio Souza\n\n2nd AC - Sam Storm\n\nA Cam - Dave Schwander\n\nB Cam - Dan Roark\n\nC Cam - Micah Simms\n\nD Cam Lydia Supinger\n\nE Cam - Dan Marque\n\nF Cam - Ben Phillips\n\nG- Peyton Johnson\n\nH - Brandon Weaver\n\nI - Taylor Davis\n\nJ - Zach Daulton\n\nTechno - Eon Mora\n\nDolly Grip - Jake Storm\n\nDolly Grip - Matthew Badea\n\nBTS - Hudson Armstrong\n\nGaffer - Andy Thomas\n\nKey Grip - Jeff Fisher",
+   "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/e9add768-b8e7-41ae-9495-cb1a0dff0ad9/Screenshot+2026-05-08+at+9.19.51%E2%80%AFPM.png",
+   "videos": [
+    {
+     "provider": "youtube",
+     "id": "B6HA605A_p8"
+    }
+   ],
+   "gallery": []
+  },
+  {
+   "slug": "joy",
+   "title": "In His Image",
+   "desc": "Dir Lydia Supinger\n\nDP - Tyler Roberts\n\nGrip - Hudson Armstrong\n\nCreative Direction: Logan Peele",
+   "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/df1bb78a-0872-4cf4-91cd-31a438d46112/frame_86724.jpg",
+   "videos": [
+    {
+     "provider": "youtube",
+     "id": "wuhICK5jvJg"
+    }
+   ],
+   "gallery": []
+  },
+  {
+   "slug": "restavek",
+   "title": "Restavek",
+   "desc": "Right now there are children in Haiti stuck in a generational system of slavery. Sponsor a child at restavekfreedom.org\nDIR- Rach Perin                                                                                  Producer-Emily Diehl\nDP- Tyler Roberts\nA CAM- Noah Vaniglia\nB CAM- Deric Hellwig\nLocation sound- Patrick Beuscher\nEdit- Deric Hellwig\nColor- Noah Vaniglia\n\nRentals from The Camera Dept.",
+   "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/3ea36b8a-e709-4fad-b203-69a320c8475d/IMG_0125.JPG",
+   "videos": [
+    {
+     "provider": "youtube",
+     "id": "_B7ya1L6i8A"
+    }
+   ],
+   "gallery": []
+  },
+  {
+   "slug": "hunger",
+   "title": "Hunger Corp",
+   "desc": "Dir Rach Perin\n\nProducer - Nakita Blodgett\n\nDP - Tyler Roberts\n\n1 AC/Loader - Lydia Supinger\n\nLocation Sound - Patrick Beuscher",
+   "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/b50ad625-09a0-4764-a7c8-6f53a29fbb74/Screenshot+2024-04-03+at+3.25.57%E2%80%AFPM.jpeg",
+   "videos": [
+    {
+     "provider": "vimeo",
+     "id": "1001280980"
+    }
+   ],
+   "gallery": []
+  },
+  {
+   "slug": "the-calling",
+   "title": "The Calling",
+   "desc": "Dir Rach Perin\n\nTri X Developed and scanned by Negativeland",
+   "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/f1ef456a-2a03-4692-a4f4-30e53eae3620/frame_471.jpg",
+   "videos": [
+    {
+     "provider": "youtube",
+     "id": "8hO9uVy2jVo"
+    }
+   ],
+   "gallery": []
+  },
+  {
+   "slug": "nepal",
+   "title": "Nepal",
+   "desc": "Dir - Rach Perin\n\nProd - Nakita Blodgett\n\nDP - Tyler Roberts\n\nAC - Lydia Supinger\n\nLocation Sound - Micah Drushal",
+   "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/9e502cd7-9654-4e30-bade-2981e0e2c7ee/frame_1035.jpg",
+   "videos": [
+    {
+     "provider": "youtube",
+     "id": "uBC9t0ebNCk"
+    }
+   ],
+   "gallery": []
+  },
+  {
+   "slug": "btfsa",
+   "title": "Build The Future",
+   "desc": "Dir - Rach Perin\n\nProd - Nakita Blodgett\n\nDP - Tyler Roberts\n\nAC Loader - Lydia Supinger\n\nAudio - Deric Hellwig\n\nKodak 250D\n\nDeveloped and Scanned by Negativeland",
+   "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/96d26dd8-e3d4-4aa0-985e-d4ba84a135ef/frame_944.jpg",
+   "videos": [
+    {
+     "provider": "youtube",
+     "id": "__pnGJLL8Hc"
+    }
+   ],
+   "gallery": []
+  },
+  {
+   "slug": "wcig",
+   "title": "What Color is God?",
+   "desc": "Right now there are children in Haiti stuck in a generational system of slavery. Sponsor a child at restavekfreedom.org\nDIR- Jennie Chacon                                                                                 Producer-Nakita Blodgett\nDP- Tyler Roberts\n1 AC - Drew Defosset\n2 AC - Sam Storm\nKey Grip - Jake Storm\nGrip - Ben Phillips\nChoreographer - Paula Rakestraw",
+   "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/02124252-c09a-48a2-bac9-5864737967aa/Screenshot+2026-05-08+at+7.55.57%E2%80%AFPM.png",
+   "videos": [
+    {
+     "provider": "youtube",
+     "id": "8hO9uVy2jVo"
+    }
+   ],
+   "gallery": []
+  },
+  {
+   "slug": "aro",
+   "title": "Appalachia Story",
+   "desc": "Dir Rach Perin\n\nProducer - Nakita Blodgett\n\nDP - Tyler Roberts\n\nA Cam - Noah vaniglia\n\n1 AC - Drew Defosset\n\nGrip - Deric Hellwig\n\nLocation Sound - Patrick Beuscher",
+   "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/0bf57e99-39bd-4368-a4f2-87c3eb8e2eda/Screenshot+2026-05-08+at+8.10.47%E2%80%AFPM.png",
+   "videos": [
+    {
+     "provider": "youtube",
+     "id": "GfsIlhpRaMM"
+    }
+   ],
+   "gallery": []
+  },
+  {
+   "slug": "qcd",
+   "title": "Queen City Disco",
+   "desc": "Director -Tyler Hill\n\nProducer- Maddie Kelly\n\nDP - Tyler Roberts",
+   "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/9fa3887b-c0a2-42c5-af31-1606924b5193/frame_87.jpg",
+   "videos": [
+    {
+     "provider": "youtube",
+     "id": "HODJRBdwHpM"
+    },
+    {
+     "provider": "youtube",
+     "id": "pEIV-2ju168"
+    }
+   ],
+   "gallery": []
+  },
+  {
+   "slug": "locke",
+   "title": "Locke Coffee",
+   "desc": "",
+   "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/8a84334a-d6f0-49dc-b92b-b8c32dc03d1e/LockeNightBefore-2840.jpg",
+   "videos": [
+    {
+     "provider": "youtube",
+     "id": "o0r8a2gxVpM"
+    },
+    {
+     "provider": "youtube",
+     "id": "GKix4WG9Fj8"
+    },
+    {
+     "provider": "youtube",
+     "id": "MM_uZ3N6Ieg"
+    },
+    {
+     "provider": "youtube",
+     "id": "2_u_PQKmvN4"
+    }
+   ],
+   "gallery": [
+    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/76bbb2f4-d98f-460a-b342-16d0a6a8ae51/LockeOpenDay-4122.jpg",
+    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/ee4c7e9a-44bd-469f-9fbf-7360a0d237b7/Locke071226-4315.jpg",
+    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/5f027846-c004-4794-b156-845bfeaaa41c/LockeNightBefore-2781.jpg",
+    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/eb60c5d6-89d2-4191-a37c-f51fe3dadcc4/LockeOpenDay-4239.jpg",
+    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/ec7bc6ee-26a7-42dd-bd8a-f149ede44449/LockeOpenDay-4143.jpg",
+    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1d86a550-59ad-4c84-b5d7-af2947e11315/Locke071226-4330.jpg",
+    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/d6e681e4-0171-4135-8597-acc622f7079e/LockeOpenDay-2867.jpg",
+    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/66bd5aad-1476-443e-b294-5bb8172447b0/LockeOpenDay-2877.jpg",
+    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/77aae4da-8676-4237-9e38-a41384d17a3a/Locke071226-4292-2.jpg",
+    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/71a04fb4-b2d7-43c7-b324-c7cba80efcfe/Locke071226-4309.jpg",
+    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/42bfa064-0603-4761-b4d5-047add671ceb/LockeOpenDay-4184.jpg",
+    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/af97179f-4bc2-4509-aa02-276150b891e3/Locke071226-4314.jpg",
+    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/c1dfcbc3-272b-4c73-a5d6-8ae5c535224b/LockeNightBefore-2840.jpg",
+    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/fa64daa5-8d11-41bd-929b-85ebf31f5a9e/Locke071226-4329.jpg",
+    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/e8536be1-c4d2-453e-993e-74ec2cf3a1c5/Locke071226-4346.jpg",
+    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/e7a5a3a6-5bf9-49be-8679-9b608015fc11/Locke071226-4349.jpg",
+    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/69ebcafd-7fb4-4e19-b21a-3656ac45fa80/Locke071226-4347.jpg",
+    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/535cb703-16f8-4a95-b9e3-85c5200e9442/Locke071226-4338.jpg",
+    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/e57bcfc9-34e0-45af-b3a5-1af71af00ed7/LockeNightBefore-2822.jpg",
+    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/0bae0d3e-e90c-4e13-b849-4227b06b4c94/LockeNightBefore-2858.jpg",
+    "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/bf1bece3-afc6-47af-81e9-dd6ba56b185c/Locke070526-7480.jpg"
+   ]
+  },
+  {
+   "slug": "bts",
+   "title": "BTS",
+   "desc": "ENJOY THE PROCESS",
+   "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/25c5d947-5c9c-4d37-a507-2f89c86ffbcb/Screenshot+2026-05-08+at+8.32.59%E2%80%AFPM.png",
+   "videos": [
+    {
+     "provider": "youtube",
+     "id": "3fOiYxlrN3g"
+    }
+   ],
+   "gallery": []
+  },
+  {
+   "slug": "man-camp",
+   "title": "Man Camp",
+   "desc": "Dir Matt Arena\n\nProducer - Alan Imber\n\nLive Director - David Albanese\n\nDP - Tyler Roberts\n\n1 AC - Fabio Souza\n\nA Cam - Luke Fletcher\n\nB Cam - Ben Nelson\n\nC Cam - Taylor Davis\n\nD Cam - Zach Schutte\n\nE Cam - Sam Stephenson\n\nF Cam - Collin Jung\n\nEdit - Chris Wallbrech\n\nDIT - Josh Curington\n\nAudio - Troy Howard\n\nPA - Owen Herman",
+   "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/0a6ecfe8-8afd-4c1e-9998-422d3cbc59c0/Screenshot+2026-05-09+at+4.19.20%E2%80%AFPM.png",
+   "videos": [
+    {
+     "provider": "youtube",
+     "id": "kUwsbOrHJhI"
+    },
+    {
+     "provider": "youtube",
+     "id": "GnaJ44Lj8mI"
+    },
+    {
+     "provider": "youtube",
+     "id": "Z5shtHioW3U"
+    }
+   ],
+   "gallery": []
+  },
+  {
+   "slug": "seu",
+   "title": "Wild Rushing Wind - Live Video",
+   "desc": "SEU Worship, Caylie Bryant - Wild Rushing Wind\n\nProduction Company: Lineage Film\n\nDirector: Robbie Barnett\n\nDP: Robbie Barnett\n\nCamera Operators: Luke Holliday, Fabio Souza, Luke Flanagan, Nathaniel Horst, Tyler Roberts\n\nEdit/Color: Robbie Barnett",
+   "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/50bdc878-b506-4023-9d51-4e52f7531284/Screenshot+2026-07-02+at+3.29.41%E2%80%AFPM.png",
+   "videos": [
+    {
+     "provider": "youtube",
+     "id": "ra2Ic5CAtTI"
+    }
+   ],
+   "gallery": []
+  },
+  {
+   "slug": "ignite",
+   "title": "Ignite Intro",
+   "desc": "Coming soon!\n\nDirector Lydia Supinger\n\nDP Tyler Roberts",
+   "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/12a14a31-99ce-42f7-8d27-27c08c36188f/frame_89740.jpg",
+   "videos": [],
+   "gallery": []
   }
+ ],
+ "bts": [
+  "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925165529-JT2ZMKXY9TMN4O6RGQEW/DSCF8951.jpeg",
+  "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1663770477716-7474WTX23BNLLBHOFJ91/DSCF4992.jpg",
+  "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1770505837553-6C4KASE18OA8ZJZLKRZ6/DSCF4140.jpeg",
+  "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1663770694224-QEJAH5B0PL6LO3K0QA0Q/IMG_4977.jpg",
+  "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925159284-HZUHW6EZVBGIIYELWTF3/8AE299FD-768A-46E8-80BF-C0A301BF1C6A-20C23865-19DE-48A5-AC24-27E89729FB78.jpeg",
+  "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1778289297226-GZG6TKZ3QTDMOX0G6EE8/IMG_5395.JPG",
+  "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925165275-VNQ4BHK4VSNL1VT9NV8K/DSCF8892.jpg",
+  "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925160906-K5FDNDJ8NNKSNR4SNS5N/77C65A18-509B-47DB-B5CC-75FA437A1179-2636-00000100ADE3F579.jpeg",
+  "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1701135938057-8H8FWGD8KN7FZUVIYDGJ/95BB8DCE-E11A-4083-BD0A-BA7F089A857B.jpg",
+  "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1770505894973-AEH7FAA9Z3SZBT25LTW3/DSCF2547.JPG",
+  "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1701135936918-TVHFT3DWXASX4K32HP6B/0ABBA41F-9FB4-4545-837E-2B1C7A06A698.jpg",
+  "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925157566-9QUSY8KZGG25FWWD2XNJ/3BF6175D-D7AA-48F1-9EF2-7B6175E25E1D-13936-0000047710D6AC9C.JPG",
+  "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925175946-6FXI1I0S9RE113G67H53/img455.jpeg",
+  "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925160251-AO52LE4BJTM6FQSXG27K/067AF39E-7FF7-4A77-B554-11DFC8EC55D5-461-0000000DC8FDDB7B.jpg",
+  "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1770505978970-XIBYOLT8KPVF9C0R862O/IMG_0301.JPG",
+  "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1701135938540-XEJZNICTTJ27WP6SA7CG/74681F38-A30E-4D37-9600-786330E6EFD8.jpg",
+  "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925793376-I08DQUDZKS7HGQ5VRE3U/IMG_1356.JPG",
+  "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1770506897608-V1O30GMR0DAHQ0BXDNOF/2023-98.jpg",
+  "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1701135939494-T2ESKAPCLA5PCVVKQDMT/IMG_7577.jpeg",
+  "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925163428-R57146FS6BHMHQEU5N0D/A5D65F25-7CBC-40A7-8D9D-E39425006184-22281-00000C2FDCC40080.JPG",
+  "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925166355-IH7W0WM6NPP4YZCU1UOK/E8D21D06-716B-4000-A4D6-1C70A1E09515-297CAAFA-3B58-426E-ABAC-37E69AC45ECE.jpeg",
+  "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1770505982953-YWRJH5XJCFB3YNY49ZOU/IMG_3489.JPG",
+  "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925163673-KDWSDLR1EY8S52YZFCV9/C9AA8FE7-2F18-425F-BE46-36B3818FB9AF-14239-000004819EC52460.JPG",
+  "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925163051-80LCYBKCMSO7JQCSR1OJ/62577465019__57ED5B52-4162-4939-970C-5C5FFB3B4472.jpeg",
+  "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925162800-5NSTSDKSPLB6MB54NFVJ/26027986-2036-4403-99C6-4C32AD992E7E-19866-000008DAE9C126BD.jpg",
+  "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925793375-S5WJXMDJZOZPJ3KWBTX5/IMG_1553.JPG",
+  "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925158396-I0J76HB50N1YGQQP59TZ/5B47B4E8-9ADE-45B2-97C8-7A2EC3B7D6CA-14239-0000048218822232.jpeg",
+  "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925164241-A9RWRWQ5RSR85TEF5V0S/CB3984E0-A6A5-4DA6-AC00-45E205E013C9.jpeg",
+  "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925164502-8JWEC0QCZ8H03O7OW1OB/DSCF8652.jpg",
+  "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925161516-3MFMZ91LRAFHNMNQFEPY/8554ADA9-88E9-45C3-B00B-6E9901E47C43-4251-0000024C4B4DC456.jpeg",
+  "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925171967-12SZB9D22NGI89SQHTWI/IMG_8011.JPG",
+  "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925167057-X6UJWWAFKTMJ09EBFCC6/EBE5895D-FD54-4925-9B36-627F4707D09D-3BC2F8A3-04A3-40CA-9672-6C79EE2599CA.jpeg",
+  "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925167438-M8WUP2QXFIK3E7UY7BTA/IMG_0290.jpg",
+  "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925167696-ICH73ZRH3DSNZVP2VUE2/IMG_1739.jpeg",
+  "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925169820-TZGQSN1KAYPL27UH919M/IMG_8895.jpeg",
+  "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925172107-I3BWQD0QVSQRSBEFO9J9/IMG_9535.jpeg",
+  "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925160075-UVB85ZVBIYJ8YX7LZPCW/63DD2DEA-D00C-4F3B-AEEA-9605D672A71F-8F6B48B3-5DC5-4B28-8B2D-F88245380ACC.jpeg",
+  "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925173077-PCSZMV8UGY42YJ5SYQG9/IMG_9813.JPG",
+  "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1662925176556-0XMM5Z73WMIYKH9QJ4UK/Screen%2BShot%2B2021-08-24%2Bat%2B8.39.22%2BPM.png",
+  "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1701135937376-YDHEL72T8DACHYCVEABO/94C8BCBC-68A3-4905-8DA7-02F1284D6C7F.jpg",
+  "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1778289299239-BAW7JHA35HGI6PEG29J0/IMG_5397.JPG",
+  "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/1778289297522-UAEYK5CEF76JZXCVIQ3V/IMG_5396.JPG"
+ ],
+ "contact": {
+  "bio": "I\u2019m a Director of Photography focused on cinematic storytelling across film, virtual production, and live environments. Whether shooting on 16mm, 35mm, or digital cinema systems, I bring a film-first approach to lighting, movement, and visual tone.",
+  "headshot": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/7ed06a17-2285-4fc6-99c1-a7ef3211fb87/1711034851977.jpeg"
+ }
 }
