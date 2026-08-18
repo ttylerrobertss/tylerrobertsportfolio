@@ -1,0 +1,344 @@
+:root {
+  --bg: #000;
+  --fg: #f2f2f2;
+  --muted: #9a9a9a;
+  --accent: #ecf250;
+  --max-width: 1400px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; text-decoration: none; }
+
+img { max-width: 100%; display: block; }
+
+.wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.site-header .logo {
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  color: var(--accent);
+  text-transform: lowercase;
+}
+
+.site-nav {
+  display: flex;
+  gap: 24px;
+}
+
+.site-nav a {
+  font-size: 14px;
+  text-transform: lowercase;
+  color: var(--fg);
+  padding-bottom: 4px;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.site-nav a:hover {
+  color: var(--accent);
+}
+
+.site-nav a.active {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* Footer */
+.site-footer {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  color: var(--muted);
+  font-size: 12px;
+  text-align: center;
+}
+
+.site-footer a:hover { color: var(--accent); }
+
+/* Portfolio grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+  padding-bottom: 60px;
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  background: #0a0a0a;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease, opacity 0.3s ease;
+}
+
+.grid-item:hover img {
+  transform: scale(1.04);
+  opacity: 0.85;
+}
+
+.grid-item .caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px 14px;
+  font-size: 13px;
+  background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0));
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.grid-item:hover .caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 560px) {
+  .grid { grid-template-columns: 1fr; gap: 8px; }
+}
+
+/* Project page */
+.project {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 48px;
+  padding: 20px 0 80px;
+  align-items: start;
+}
+
+.project .video-wrap {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  background: #0a0a0a;
+}
+
+.project .video-wrap iframe {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  border: 0;
+}
+
+.project h1 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0 0 14px;
+}
+
+.project .desc {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--fg);
+  white-space: pre-line;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 24px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.back-link:hover { color: var(--accent); }
+
+.no-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 56.25%;
+  position: relative;
+  background: #0a0a0a;
+}
+
+.no-video span {
+  position: absolute;
+  top: 50%; left: 50%; transform: translate(-50%, -50%);
+  color: var(--muted);
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+  .project { grid-template-columns: 1fr; gap: 24px; }
+}
+
+/* BTS gallery */
+.bts-grid {
+  columns: 3;
+  column-gap: 6px;
+  padding-bottom: 60px;
+}
+
+.bts-grid img {
+  width: 100%;
+  margin-bottom: 6px;
+  cursor: zoom-in;
+  break-inside: avoid;
+}
+
+@media (max-width: 900px) {
+  .bts-grid { columns: 2; }
+}
+
+@media (max-width: 560px) {
+  .bts-grid { columns: 1; }
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.94);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 30px;
+}
+
+.lightbox.open { display: flex; }
+
+.lightbox img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+}
+
+.lightbox .close {
+  position: absolute;
+  top: 24px;
+  right: 28px;
+  font-size: 28px;
+  color: var(--fg);
+  cursor: pointer;
+}
+
+.lightbox .close:hover { color: var(--accent); }
+
+/* Contact page */
+.contact {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  gap: 56px;
+  padding: 20px 0 80px;
+  align-items: start;
+}
+
+.contact .headshot img {
+  width: 100%;
+  border-radius: 2px;
+}
+
+.contact .bio {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--fg);
+  margin-bottom: 36px;
+}
+
+.contact form {
+  display: grid;
+  gap: 16px;
+  max-width: 460px;
+}
+
+.contact .name-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.contact label {
+  font-size: 12px;
+  text-transform: lowercase;
+  color: var(--muted);
+  margin-bottom: 6px;
+  display: block;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #333;
+  color: var(--fg);
+  font-family: inherit;
+  font-size: 14px;
+  padding: 8px 0;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  border-color: var(--accent);
+}
+
+.contact textarea { resize: vertical; min-height: 100px; }
+
+.contact button {
+  justify-self: start;
+  margin-top: 8px;
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 10px 26px;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.contact button:hover {
+  background: var(--accent);
+  color: #000;
+}
+
+.form-note {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 10px;
+}
+
+@media (max-width: 800px) {
+  .contact { grid-template-columns: 1fr; }
+  .contact .headshot { max-width: 220px; }
+}
