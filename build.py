@@ -8,7 +8,7 @@ with open(os.path.join(ROOT, "manifest.json")) as f:
     manifest = json.load(f)
 
 SITE_NAME = "tyler roberts - cinematographer"
-FORMSPREE_ENDPOINT = "https://formspree.io/f/YOUR_FORM_ID"  # replace after creating a Formspree form
+FORMSPREE_ENDPOINT = "https://formspree.io/f/mqpzggzw"
 
 def header(active, depth=0):
     prefix = "../" * depth
