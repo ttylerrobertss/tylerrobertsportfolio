@@ -68,6 +68,13 @@ img { max-width: 100%; display: block; }
   border-color: var(--accent);
 }
 
+@media (min-width: 901px) {
+  .site-header { padding-top: 30px; padding-bottom: 30px; }
+  .site-header .logo { font-size: 18px; }
+  .site-nav { gap: 32px; }
+  .site-nav a { font-size: 16px; }
+}
+
 /* Footer */
 .site-footer {
   padding-top: 40px;
@@ -214,6 +221,23 @@ img { max-width: 100%; display: block; }
 
 @media (max-width: 560px) {
   .video-multi { grid-template-columns: 1fr; }
+}
+
+/* Side-by-side vertical (9:16) videos, e.g. Reels/Shorts */
+.video-multi.video-vertical {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.video-multi.video-vertical .video-wrap {
+  padding-bottom: 177.78%;
+}
+
+@media (max-width: 900px) {
+  .video-multi.video-vertical { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 560px) {
+  .video-multi.video-vertical { grid-template-columns: 1fr; }
 }
 
 /* Photo gallery on a project page */

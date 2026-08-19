@@ -251,6 +251,7 @@
    "title": "Locke Coffee",
    "desc": "",
    "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/8a84334a-d6f0-49dc-b92b-b8c32dc03d1e/LockeNightBefore-2840.jpg",
+   "video_aspect": "9:16",
    "videos": [
     {
      "provider": "youtube",

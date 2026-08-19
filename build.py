@@ -94,7 +94,8 @@ for p in data["projects"]:
         media = video_embed(videos[0], p["title"])
     else:
         embeds = "".join(video_embed(v, p["title"]) for v in videos)
-        media = f'<div class="video-multi">{embeds}</div>'
+        multi_cls = "video-multi video-vertical" if p.get("video_aspect") == "9:16" else "video-multi"
+        media = f'<div class="{multi_cls}">{embeds}</div>'
 
     desc_html = html.escape(p["desc"]).replace("\n", "<br>") if p["desc"] else ""
 
