@@ -218,23 +218,26 @@ img { max-width: 100%; display: block; }
 
 /* Photo gallery on a project page */
 .project-gallery {
-  columns: 3;
-  column-gap: 6px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 4px;
   padding-bottom: 60px;
 }
 
 .project-gallery img {
   width: 100%;
-  margin-bottom: 6px;
-  break-inside: avoid;
+  height: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  cursor: zoom-in;
 }
 
 @media (max-width: 900px) {
-  .project-gallery { columns: 2; }
+  .project-gallery { grid-template-columns: repeat(3, 1fr); }
 }
 
 @media (max-width: 560px) {
-  .project-gallery { columns: 1; }
+  .project-gallery { grid-template-columns: repeat(2, 1fr); gap: 8px; }
 }
 
 /* BTS gallery */

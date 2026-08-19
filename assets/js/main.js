@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const grid = document.querySelector(".bts-grid");
-  if (!grid) return;
+  const galleries = document.querySelectorAll(".bts-grid, .project-gallery");
+  if (!galleries.length) return;
 
   const lightbox = document.createElement("div");
   lightbox.className = "lightbox";
@@ -8,10 +8,12 @@ document.addEventListener("DOMContentLoaded", () => {
   document.body.appendChild(lightbox);
   const lightboxImg = lightbox.querySelector("img");
 
-  grid.querySelectorAll("img").forEach((img) => {
-    img.addEventListener("click", () => {
-      lightboxImg.src = img.src;
-      lightbox.classList.add("open");
+  galleries.forEach((grid) => {
+    grid.querySelectorAll("img").forEach((img) => {
+      img.addEventListener("click", () => {
+        lightboxImg.src = img.src;
+        lightbox.classList.add("open");
+      });
     });
   });
 
