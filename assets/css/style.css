@@ -316,6 +316,29 @@ img { max-width: 100%; display: block; }
 
 .lightbox .close:hover { color: var(--accent); }
 
+.lightbox-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 56px;
+  line-height: 1;
+  color: var(--fg);
+  cursor: pointer;
+  padding: 12px;
+  user-select: none;
+  transition: color 0.15s ease;
+}
+
+.lightbox-arrow.prev { left: 8px; }
+.lightbox-arrow.next { right: 8px; }
+.lightbox-arrow:hover { color: var(--accent); }
+
+@media (max-width: 560px) {
+  .lightbox-arrow { font-size: 36px; padding: 6px; }
+  .lightbox-arrow.prev { left: 0; }
+  .lightbox-arrow.next { right: 0; }
+}
+
 /* Contact page */
 .contact {
   display: grid;
