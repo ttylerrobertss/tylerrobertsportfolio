@@ -77,6 +77,10 @@ img { max-width: 100%; display: block; }
 
 /* Footer */
 .site-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
   padding-top: 40px;
   padding-bottom: 60px;
   color: var(--muted);
@@ -85,6 +89,12 @@ img { max-width: 100%; display: block; }
 }
 
 .site-footer a:hover { color: var(--accent); }
+
+.footer-instagram {
+  display: inline-flex;
+  color: var(--fg);
+  transition: color 0.15s ease;
+}
 
 /* Portfolio grid */
 .grid {

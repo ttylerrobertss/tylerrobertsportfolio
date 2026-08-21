@@ -26,6 +26,9 @@ def header(active, depth=0):
 
 def footer(depth=0):
     return f"""<footer class="site-footer wrap">
+    <a class="footer-instagram" href="https://instagram.com/ttylerrobertss" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>
+    </a>
     <span>&copy; {SITE_NAME}</span>
   </footer>"""
 
