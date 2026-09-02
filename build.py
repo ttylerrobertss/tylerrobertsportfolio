@@ -113,11 +113,14 @@ person_jsonld = f"""<script type="application/ld+json">
 }}
 </script>"""
 
+google_site_verification = '<meta name="google-site-verification" content="du7SJo6n_VMNp4xpUbpNSIbhMdOM1YZzss6qNg08VrA" />'
+
 with open(os.path.join(ROOT, "index.html"), "w") as f:
     f.write(page(
         "Tyler Roberts — Cincinnati Cinematographer & Director of Photography",
         home_body, "portfolio", depth=0, show_footer=True, title_is_full=True,
-        description=DEFAULT_DESCRIPTION, canonical_path="", extra_head=person_jsonld,
+        description=DEFAULT_DESCRIPTION, canonical_path="",
+        extra_head=google_site_verification + person_jsonld,
     ))
 
 # ---------- Project pages ----------
