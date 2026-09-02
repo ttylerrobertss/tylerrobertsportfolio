@@ -180,8 +180,6 @@ for p in data["projects"]:
         format_str = "digital"
     else:
         format_str = ""
-    format_tag_html = f'<p class="format-tag">Shot on {html.escape(format_str)}</p>' if format_str else ""
-
     gallery_html = ""
     if gallery:
         gallery_imgs = "".join(
@@ -196,7 +194,6 @@ for p in data["projects"]:
       {media}
       <div>
         <h1>{html.escape(p['title'])}</h1>
-        {format_tag_html}
         <div class="desc">{desc_html}</div>
       </div>
     </div>
