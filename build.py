@@ -87,6 +87,7 @@ for p in data["projects"]:
       </a>""")
 
 home_body = f"""<main class="wrap">
+    <h1 class="sr-only">Tyler Roberts — Cincinnati Cinematographer &amp; Director of Photography</h1>
     <div class="grid">
       {''.join(grid_items)}
     </div>
@@ -194,6 +195,7 @@ for fname in manifest["bts"]:
     bts_imgs.append(f'<img src="../assets/img/bts/{fname}" alt="behind the scenes" loading="lazy">')
 
 bts_body = f"""<main class="wrap">
+    <h1 class="sr-only">Behind the Scenes — Tyler Roberts, Cincinnati Cinematographer</h1>
     <div class="bts-grid">
       {''.join(bts_imgs)}
     </div>
@@ -215,6 +217,7 @@ bio_html = html.escape(data["contact"]["bio"])
 headshot = manifest["headshot"]
 
 contact_body = f"""<main class="wrap">
+    <h1 class="sr-only">Contact Tyler Roberts — Cincinnati Cinematographer &amp; Director of Photography</h1>
     <div class="contact">
       <div class="headshot">
         <img src="../assets/img/headshot/{headshot}" alt="Tyler Roberts">
