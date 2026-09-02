@@ -9,6 +9,12 @@ with open(os.path.join(ROOT, "manifest.json")) as f:
 
 SITE_NAME = "tyler roberts - cinematographer"
 FORMSPREE_ENDPOINT = "https://formspree.io/f/mqpzggzw"
+BASE_URL = "https://tylerrobertsportfolio.com"
+DEFAULT_DESCRIPTION = (
+    "Tyler Roberts is a Cincinnati, OH-based cinematographer and Director of "
+    "Photography shooting commercials, music videos, and narrative film — "
+    "available for productions worldwide."
+)
 
 def header(active, depth=0):
     prefix = "../" * depth
@@ -32,15 +38,32 @@ def footer(depth=0):
     <span>&copy; {SITE_NAME}</span>
   </footer>"""
 
-def page(title, body, active, depth=0, extra_head="", show_footer=False):
+def page(title, body, active, depth=0, extra_head="", show_footer=False,
+         description=DEFAULT_DESCRIPTION, canonical_path="", og_image="assets/img/thumbs/reel.webp",
+         title_is_full=False):
     prefix = "../" * depth
     footer_html = footer(depth) if show_footer else ""
+    full_title = html.escape(title) if title_is_full else f"{html.escape(title)} — {SITE_NAME}"
+    desc_attr = html.escape(" ".join(description.split()))
+    canonical_url = f"{BASE_URL}/{canonical_path}"
+    og_image_url = f"{BASE_URL}/{og_image}"
     return f"""<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{html.escape(title)} — {SITE_NAME}</title>
+  <title>{full_title}</title>
+  <meta name="description" content="{desc_attr}">
+  <link rel="canonical" href="{canonical_url}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{full_title}">
+  <meta property="og:description" content="{desc_attr}">
+  <meta property="og:url" content="{canonical_url}">
+  <meta property="og:image" content="{og_image_url}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{full_title}">
+  <meta name="twitter:description" content="{desc_attr}">
+  <meta name="twitter:image" content="{og_image_url}">
   <link rel="stylesheet" href="{prefix}assets/css/style.css">
   {extra_head}
 </head>
@@ -69,8 +92,33 @@ home_body = f"""<main class="wrap">
     </div>
   </main>"""
 
+person_jsonld = f"""<script type="application/ld+json">
+{{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Tyler Roberts",
+  "jobTitle": "Cinematographer / Director of Photography",
+  "url": "{BASE_URL}/",
+  "image": "{BASE_URL}/assets/img/headshot/{manifest['headshot']}",
+  "sameAs": [
+    "https://instagram.com/ttylerrobertss"
+  ],
+  "address": {{
+    "@type": "PostalAddress",
+    "addressLocality": "Cincinnati",
+    "addressRegion": "OH",
+    "addressCountry": "US"
+  }},
+  "description": "{html.escape(' '.join(DEFAULT_DESCRIPTION.split()))}"
+}}
+</script>"""
+
 with open(os.path.join(ROOT, "index.html"), "w") as f:
-    f.write(page(SITE_NAME, home_body, "portfolio", depth=0, show_footer=True))
+    f.write(page(
+        "Tyler Roberts — Cincinnati Cinematographer & Director of Photography",
+        home_body, "portfolio", depth=0, show_footer=True, title_is_full=True,
+        description=DEFAULT_DESCRIPTION, canonical_path="", extra_head=person_jsonld,
+    ))
 
 # ---------- Project pages ----------
 def video_embed(video, title):
@@ -122,10 +170,20 @@ for p in data["projects"]:
     {gallery_html}
   </main>"""
 
+    project_desc = (
+        f"{p['title']} — cinematography by Tyler Roberts, a Cincinnati-based "
+        f"Director of Photography available for productions worldwide."
+    )
+    project_thumb = manifest["thumbs"].get(p["slug"])
+    og_image = f"assets/img/thumbs/{project_thumb}" if project_thumb else "assets/img/thumbs/reel.webp"
+
     outdir = os.path.join(ROOT, "portfolio", p["slug"])
     os.makedirs(outdir, exist_ok=True)
     with open(os.path.join(outdir, "index.html"), "w") as f:
-        f.write(page(p["title"], body, "portfolio", depth=2))
+        f.write(page(
+            p["title"], body, "portfolio", depth=2,
+            description=project_desc, canonical_path=f"portfolio/{p['slug']}/", og_image=og_image,
+        ))
 
 # ---------- BTS page ----------
 bts_imgs = []
@@ -138,9 +196,16 @@ bts_body = f"""<main class="wrap">
     </div>
   </main>"""
 
+bts_desc = "Behind-the-scenes photos from Tyler Roberts' film, commercial, and live production work."
+bts_thumb = manifest["thumbs"].get("bts")
+bts_og_image = f"assets/img/thumbs/{bts_thumb}" if bts_thumb else "assets/img/thumbs/reel.webp"
+
 os.makedirs(os.path.join(ROOT, "bts"), exist_ok=True)
 with open(os.path.join(ROOT, "bts", "index.html"), "w") as f:
-    f.write(page("BTS", bts_body, "bts", depth=1))
+    f.write(page(
+        "BTS", bts_body, "bts", depth=1,
+        description=bts_desc, canonical_path="bts/", og_image=bts_og_image,
+    ))
 
 # ---------- Contact page ----------
 bio_html = html.escape(data["contact"]["bio"])
@@ -179,8 +244,38 @@ contact_body = f"""<main class="wrap">
     </div>
   </main>"""
 
+contact_desc = (
+    "Contact Tyler Roberts, a Cincinnati, OH-based Director of Photography "
+    "and cinematographer available for productions worldwide."
+)
+
 os.makedirs(os.path.join(ROOT, "contact"), exist_ok=True)
 with open(os.path.join(ROOT, "contact", "index.html"), "w") as f:
-    f.write(page("Contact", contact_body, "contact", depth=1))
+    f.write(page(
+        "Contact", contact_body, "contact", depth=1,
+        description=contact_desc, canonical_path="contact/",
+        og_image=f"assets/img/headshot/{headshot}",
+    ))
+
+# ---------- sitemap.xml + robots.txt ----------
+sitemap_paths = ["", "bts/", "contact/"] + [f"portfolio/{p['slug']}/" for p in data["projects"]]
+sitemap_urls = "\n".join(
+    f"  <url><loc>{BASE_URL}/{path}</loc></url>" for path in sitemap_paths
+)
+sitemap_xml = f"""<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{sitemap_urls}
+</urlset>
+"""
+with open(os.path.join(ROOT, "sitemap.xml"), "w") as f:
+    f.write(sitemap_xml)
+
+robots_txt = f"""User-agent: *
+Allow: /
+
+Sitemap: {BASE_URL}/sitemap.xml
+"""
+with open(os.path.join(ROOT, "robots.txt"), "w") as f:
+    f.write(robots_txt)
 
 print("Build complete.")
