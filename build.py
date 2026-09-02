@@ -12,7 +12,8 @@ FORMSPREE_ENDPOINT = "https://formspree.io/f/mqpzggzw"
 BASE_URL = "https://tylerrobertsportfolio.com"
 DEFAULT_DESCRIPTION = (
     "Tyler Roberts is a Cincinnati, OH-based cinematographer and Director of "
-    "Photography shooting commercials, music videos, and narrative film — "
+    "Photography specializing in 16mm and 35mm motion picture film, plus Super 8 "
+    "and digital cinema — shooting commercials, music videos, and narrative film, "
     "available for productions worldwide."
 )
 
@@ -87,7 +88,8 @@ for p in data["projects"]:
       </a>""")
 
 home_body = f"""<main class="wrap">
-    <h1 class="sr-only">Tyler Roberts — Cincinnati Cinematographer &amp; Director of Photography</h1>
+    <h1 class="sr-only">Tyler Roberts — Cincinnati 16mm &amp; 35mm Film Cinematographer / Director of Photography</h1>
+    <p class="tagline">16mm &amp; 35mm motion picture film &middot; Super 8 &middot; digital — Cincinnati, available worldwide</p>
     <div class="grid">
       {''.join(grid_items)}
     </div>
@@ -110,6 +112,13 @@ person_jsonld = f"""<script type="application/ld+json">
     "addressRegion": "OH",
     "addressCountry": "US"
   }},
+  "knowsAbout": [
+    "16mm film",
+    "35mm film",
+    "Super 8 film",
+    "Motion picture film cinematography",
+    "Digital cinematography"
+  ],
   "description": "{html.escape(' '.join(DEFAULT_DESCRIPTION.split()))}"
 }}
 </script>"""
@@ -118,7 +127,7 @@ google_site_verification = '<meta name="google-site-verification" content="du7SJ
 
 with open(os.path.join(ROOT, "index.html"), "w") as f:
     f.write(page(
-        "Tyler Roberts — Cincinnati Cinematographer & Director of Photography",
+        "Tyler Roberts | Cincinnati 16mm/35mm Film Cinematographer",
         home_body, "portfolio", depth=0, show_footer=True, title_is_full=True,
         description=DEFAULT_DESCRIPTION, canonical_path="",
         extra_head=google_site_verification + person_jsonld,
@@ -154,6 +163,15 @@ for p in data["projects"]:
 
     desc_html = html.escape(p["desc"]).replace("\n", "<br>") if p["desc"] else ""
 
+    formats = p.get("film_formats", [])
+    if len(formats) == 0:
+        format_str = ""
+    elif len(formats) == 1:
+        format_str = formats[0]
+    else:
+        format_str = " & ".join([", ".join(formats[:-1]), formats[-1]]) if len(formats) > 2 else " & ".join(formats)
+    format_tag_html = f'<p class="format-tag">Shot on {html.escape(format_str)} film</p>' if format_str else ""
+
     gallery_html = ""
     if gallery:
         gallery_imgs = "".join(
@@ -168,16 +186,23 @@ for p in data["projects"]:
       {media}
       <div>
         <h1>{html.escape(p['title'])}</h1>
+        {format_tag_html}
         <div class="desc">{desc_html}</div>
       </div>
     </div>
     {gallery_html}
   </main>"""
 
-    project_desc = (
-        f"{p['title']} — cinematography by Tyler Roberts, a Cincinnati-based "
-        f"Director of Photography available for productions worldwide."
-    )
+    if format_str:
+        project_desc = (
+            f"{p['title']} — cinematography by Tyler Roberts, shot on {format_str} film. "
+            f"Cincinnati-based Director of Photography available for productions worldwide."
+        )
+    else:
+        project_desc = (
+            f"{p['title']} — cinematography by Tyler Roberts, a Cincinnati-based "
+            f"Director of Photography available for productions worldwide."
+        )
     project_thumb = manifest["thumbs"].get(p["slug"])
     og_image = f"assets/img/thumbs/{project_thumb}" if project_thumb else "assets/img/thumbs/reel.webp"
 

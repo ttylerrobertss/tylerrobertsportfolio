@@ -31,6 +31,10 @@
    "title": "Free Hair",
    "desc": "Dir Ashley Hill + Blake Roberts\n\nProducer - Maddie Kelly\n\nDP - Tyler Roberts\n\nGrip - Noah Reilly\n\nCreative Director / Photographer - Nick Smith",
    "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/50280f9c-1246-4208-8a1b-bad5c4c00287/frame_743.jpg",
+   "film_formats": [
+    "16mm",
+    "Super 8"
+   ],
    "videos": [
     {
      "provider": "youtube",
@@ -78,6 +82,9 @@
    "title": "Black Bird",
    "desc": "Dir  Lydia Supinger\n\nProducer - Maddie Kelly\n\nDP - Tyler Roberts\n\nGaffer - Matthew Badea\n\nKey Grip - Deric Hellwig\n\nGrip - Hudson Armstrong\n\nGrip - Justus Guard\n\nGrip - Patrick Buescher\n\nEdit - Kelsey Seurkamp/Henry Czerwonka\n\nColor - Matthew Badea\n\n500T Dev+Scan - Kodak NYC\n\nCamera supplied by The Camera Dept",
    "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/cb5a2a1b-1752-4917-82b1-4b48f9aefeac/frame_3230.jpg",
+   "film_formats": [
+    "35mm"
+   ],
    "videos": [
     {
      "provider": "youtube",
@@ -91,6 +98,10 @@
    "title": "Stoop Dayz",
    "desc": "Production Co - Rooted Creative\n\nDirector - Michael Millay\n\nProducer - Patty Salas\n\nDP - Tyler Roberts\n\nGaffer - Trav Thompson",
    "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/ab3aaa43-f863-43f4-a2fc-90ad4a571106/Screenshot+2026-05-08+at+8.21.35%E2%80%AFPM.png",
+   "film_formats": [
+    "16mm",
+    "Super 8"
+   ],
    "videos": [
     {
      "provider": "youtube",
@@ -130,6 +141,9 @@
    "title": "In His Image",
    "desc": "Dir Lydia Supinger\n\nDP - Tyler Roberts\n\nGrip - Hudson Armstrong\n\nCreative Direction: Logan Peele",
    "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/df1bb78a-0872-4cf4-91cd-31a438d46112/frame_86724.jpg",
+   "film_formats": [
+    "16mm"
+   ],
    "videos": [
     {
      "provider": "youtube",
@@ -156,6 +170,9 @@
    "title": "Hunger Corp",
    "desc": "Dir Rach Perin\n\nProducer - Nakita Blodgett\n\nDP - Tyler Roberts\n\n1 AC/Loader - Lydia Supinger\n\nLocation Sound - Patrick Beuscher",
    "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/b50ad625-09a0-4764-a7c8-6f53a29fbb74/Screenshot+2024-04-03+at+3.25.57%E2%80%AFPM.jpeg",
+   "film_formats": [
+    "16mm"
+   ],
    "videos": [
     {
      "provider": "youtube",
@@ -169,6 +186,9 @@
    "title": "The Calling",
    "desc": "Dir Rach Perin\n\nTri X Developed and scanned by Negativeland",
    "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/f1ef456a-2a03-4692-a4f4-30e53eae3620/frame_471.jpg",
+   "film_formats": [
+    "16mm"
+   ],
    "videos": [
     {
      "provider": "youtube",
@@ -195,6 +215,9 @@
    "title": "Build The Future",
    "desc": "Dir - Rach Perin\n\nProd - Nakita Blodgett\n\nDP - Tyler Roberts\n\nAC Loader - Lydia Supinger\n\nAudio - Deric Hellwig\n\nKodak 250D\n\nDeveloped and Scanned by Negativeland",
    "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/96d26dd8-e3d4-4aa0-985e-d4ba84a135ef/frame_944.jpg",
+   "film_formats": [
+    "Super 16"
+   ],
    "videos": [
     {
      "provider": "youtube",
@@ -354,6 +377,10 @@
    "title": "Inner Vision",
    "desc": "",
    "thumb": "",
+   "film_formats": [
+    "16mm",
+    "Super 8"
+   ],
    "videos": [],
    "gallery": []
   }
