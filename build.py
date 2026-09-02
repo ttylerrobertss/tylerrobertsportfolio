@@ -164,13 +164,23 @@ for p in data["projects"]:
     desc_html = html.escape(p["desc"]).replace("\n", "<br>") if p["desc"] else ""
 
     formats = p.get("film_formats", [])
-    if len(formats) == 0:
-        format_str = ""
-    elif len(formats) == 1:
-        format_str = formats[0]
+    film_gauges = [f for f in formats if f != "Digital"]
+    has_digital = "Digital" in formats
+
+    def join_natural(items):
+        if len(items) == 1:
+            return items[0]
+        return " & ".join([", ".join(items[:-1]), items[-1]]) if len(items) > 2 else " & ".join(items)
+
+    if film_gauges and has_digital:
+        format_str = f"{join_natural(film_gauges)} film, plus digital"
+    elif film_gauges:
+        format_str = f"{join_natural(film_gauges)} film"
+    elif has_digital:
+        format_str = "digital"
     else:
-        format_str = " & ".join([", ".join(formats[:-1]), formats[-1]]) if len(formats) > 2 else " & ".join(formats)
-    format_tag_html = f'<p class="format-tag">Shot on {html.escape(format_str)} film</p>' if format_str else ""
+        format_str = ""
+    format_tag_html = f'<p class="format-tag">Shot on {html.escape(format_str)}</p>' if format_str else ""
 
     gallery_html = ""
     if gallery:
@@ -195,7 +205,7 @@ for p in data["projects"]:
 
     if format_str:
         project_desc = (
-            f"{p['title']} — cinematography by Tyler Roberts, shot on {format_str} film. "
+            f"{p['title']} — cinematography by Tyler Roberts, shot on {format_str}. "
             f"Cincinnati-based Director of Photography available for productions worldwide."
         )
     else:
