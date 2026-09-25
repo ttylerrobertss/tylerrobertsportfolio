@@ -24,6 +24,9 @@ def header(active, depth=0):
         return f'<a href="{prefix}{href}"{cls}>{label}</a>'
     return f"""<header class="site-header wrap">
     <a class="logo" href="{prefix}index.html">{SITE_NAME}</a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
     <nav class="site-nav">
       {link("index.html", "portfolio", "portfolio")}
       {link("bts/index.html", "bts", "bts")}
