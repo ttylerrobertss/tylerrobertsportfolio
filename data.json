@@ -368,11 +368,17 @@
   },
   {
    "slug": "ignite",
-   "title": "Ignite Intro",
-   "desc": "Coming soon!\n\nDirector Lydia Supinger\n\nDP Tyler Roberts",
+   "title": "Ignite",
+   "desc": "Director Lydia Supinger\n\nDP Tyler Roberts",
    "thumb": "https://images.squarespace-cdn.com/content/v1/631c97f2caa2f3026a02848b/12a14a31-99ce-42f7-8d27-27c08c36188f/frame_89740.jpg",
-   "videos": [],
-   "gallery": []
+   "videos": [
+    {
+     "provider": "youtube",
+     "id": "op3PPpuKrbs"
+    }
+   ],
+   "gallery": [],
+   "video_poster": "ignite.webp"
   },
   {
    "slug": "innervision",
