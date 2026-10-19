@@ -234,8 +234,8 @@ img { max-width: 100%; display: block; }
 /* Project page */
 .project {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 320px;
-  gap: 48px;
+  grid-template-columns: minmax(0, 1fr) 260px;
+  gap: 36px;
   padding: 20px 0 80px;
   align-items: start;
 }
@@ -294,7 +294,7 @@ img { max-width: 100%; display: block; }
   text-transform: uppercase;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1100px) {
   .project { grid-template-columns: 1fr; gap: 24px; }
 }
 
