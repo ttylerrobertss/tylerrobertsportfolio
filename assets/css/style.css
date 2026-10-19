@@ -543,23 +543,17 @@ img { max-width: 100%; display: block; }
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
-  align-items: center;
-  gap: 12px;
   padding: 0;
   border: 0;
   background: none;
   color: #fff;
-  font: inherit;
-  font-size: 13px;
-  letter-spacing: 0.24em;
-  text-transform: uppercase;
   cursor: pointer;
   filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.45));
   transition: color 0.2s;
 }
 
 .video-play svg {
-  width: 30px; height: 30px;
+  width: 44px; height: 44px;
   fill: currentColor;
 }
 
@@ -570,8 +564,7 @@ img { max-width: 100%; display: block; }
 }
 
 @media (max-width: 560px) {
-  .video-play { gap: 8px; font-size: 11px; }
-  .video-play svg { width: 22px; height: 22px; }
+  .video-play svg { width: 32px; height: 32px; }
 }
 
 

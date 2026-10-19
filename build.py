@@ -160,7 +160,7 @@ def video_embed(video, title, aspect=None, poster=None):
         play_src = f"{src}?autoplay=1&rel=0&playsinline=1"
         return f"""<div class="video-wrap video-facade"{style} data-src="{html.escape(play_src)}" data-title="{html.escape(title)}">
         <img src="../../assets/img/posters/{poster}" alt="{html.escape(title)}">
-        <button class="video-play" type="button" aria-label="Play video"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg><span>Play</span></button>
+        <button class="video-play" type="button" aria-label="Play video"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg></button>
       </div>"""
     return f"""<div class="video-wrap"{style}>
         <iframe src="{src}" title="{html.escape(title)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
