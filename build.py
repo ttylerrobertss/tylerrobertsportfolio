@@ -97,10 +97,10 @@ for p in data["projects"]:
 
 home_body = f"""<main class="wrap">
     <h1 class="sr-only">Tyler Roberts — Cincinnati 16mm &amp; 35mm Film Cinematographer / Director of Photography</h1>
-    <p class="tagline">16mm &amp; 35mm motion picture film &middot; Super 8 &middot; digital — Cincinnati, available worldwide</p>
     <div class="grid">
       {''.join(grid_items)}
     </div>
+    <p class="tagline">16mm &amp; 35mm motion picture film &middot; Super 8 &middot; digital — Cincinnati, available worldwide</p>
   </main>"""
 
 person_jsonld = f"""<script type="application/ld+json">
