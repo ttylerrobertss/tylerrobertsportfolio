@@ -1,6 +1,11 @@
-import json, os, html
+import json, os, html, hashlib
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
+
+ASSET_VER = {
+    k: hashlib.md5(open(os.path.join(ROOT, path), "rb").read()).hexdigest()[:8]
+    for k, path in {"css": "assets/css/style.css", "js": "assets/js/main.js"}.items()
+}
 
 with open(os.path.join(ROOT, "data.json")) as f:
     data = json.load(f)
@@ -68,14 +73,14 @@ def page(title, body, active, depth=0, extra_head="", show_footer=False,
   <meta name="twitter:title" content="{full_title}">
   <meta name="twitter:description" content="{desc_attr}">
   <meta name="twitter:image" content="{og_image_url}">
-  <link rel="stylesheet" href="{prefix}assets/css/style.css">
+  <link rel="stylesheet" href="{prefix}assets/css/style.css?v={ASSET_VER['css']}">
   {extra_head}
 </head>
 <body>
   {header(active, depth)}
   {body}
   {footer_html}
-  <script src="{prefix}assets/js/main.js"></script>
+  <script src="{prefix}assets/js/main.js?v={ASSET_VER['js']}"></script>
 </body>
 </html>
 """
@@ -155,7 +160,7 @@ def video_embed(video, title, aspect=None, poster=None):
         play_src = f"{src}?autoplay=1&rel=0&playsinline=1"
         return f"""<div class="video-wrap video-facade"{style} data-src="{html.escape(play_src)}" data-title="{html.escape(title)}">
         <img src="../../assets/img/posters/{poster}" alt="{html.escape(title)}">
-        <button class="video-play" type="button" aria-label="Play video"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button>
+        <button class="video-play" type="button" aria-label="Play video"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg><span>Play</span></button>
       </div>"""
     return f"""<div class="video-wrap"{style}>
         <iframe src="{src}" title="{html.escape(title)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
