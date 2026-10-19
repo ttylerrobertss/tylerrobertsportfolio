@@ -137,7 +137,7 @@ with open(os.path.join(ROOT, "index.html"), "w") as f:
     ))
 
 # ---------- Project pages ----------
-def video_embed(video, title, aspect=None):
+def video_embed(video, title, aspect=None, poster=None):
     provider, video_id = video["provider"], video["id"]
     if provider == "youtube":
         src = f"https://www.youtube-nocookie.com/embed/{video_id}"
@@ -151,6 +151,12 @@ def video_embed(video, title, aspect=None):
     if aspect and aspect != "9:16":
         w, h = (float(n) for n in aspect.split(":"))
         style = f' style="padding-bottom: {h / w * 100:.3f}%"'
+    if poster and provider == "youtube":
+        play_src = f"{src}?autoplay=1&rel=0&playsinline=1"
+        return f"""<div class="video-wrap video-facade"{style} data-src="{html.escape(play_src)}" data-title="{html.escape(title)}">
+        <img src="../../assets/img/posters/{poster}" alt="{html.escape(title)}">
+        <button class="video-play" type="button" aria-label="Play video"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button>
+      </div>"""
     return f"""<div class="video-wrap"{style}>
         <iframe src="{src}" title="{html.escape(title)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
       </div>"""
@@ -162,7 +168,7 @@ for p in data["projects"]:
     if len(videos) == 0:
         media = '<div class="no-video"><span>Coming soon</span></div>'
     elif len(videos) == 1:
-        media = video_embed(videos[0], p["title"], p.get("video_aspect"))
+        media = video_embed(videos[0], p["title"], p.get("video_aspect"), p.get("video_poster"))
     else:
         embeds = "".join(video_embed(v, p["title"]) for v in videos)
         multi_cls = "video-multi video-vertical" if p.get("video_aspect") == "9:16" else "video-multi"

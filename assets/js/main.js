@@ -72,3 +72,17 @@ document.addEventListener("DOMContentLoaded", () => {
     if (e.key === "Escape") closeMenu();
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".video-facade").forEach((wrap) => {
+    wrap.addEventListener("click", () => {
+      const iframe = document.createElement("iframe");
+      iframe.src = wrap.dataset.src;
+      iframe.title = wrap.dataset.title;
+      iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+      iframe.allowFullscreen = true;
+      wrap.replaceChildren(iframe);
+      wrap.classList.remove("video-facade");
+    }, { once: true });
+  });
+});

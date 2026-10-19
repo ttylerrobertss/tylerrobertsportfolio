@@ -522,3 +522,52 @@ img { max-width: 100%; display: block; }
   .contact { grid-template-columns: 1fr; }
   .contact .headshot { max-width: 220px; }
 }
+
+/* Click-to-play video: clean poster until clicked, then loads the player */
+.video-facade {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.video-facade img {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.video-facade:hover img { transform: scale(1.02); }
+
+.video-play {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px; height: 64px;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.25);
+  color: #fff;
+  cursor: pointer;
+  backdrop-filter: blur(2px);
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.video-play svg {
+  width: 24px; height: 24px;
+  margin-left: 3px;
+  fill: currentColor;
+}
+
+.video-facade:hover .video-play,
+.video-play:focus-visible {
+  background: rgba(0, 0, 0, 0.45);
+  border-color: var(--accent);
+  color: var(--accent);
+  outline: none;
+}
+
+@media (max-width: 560px) {
+  .video-play { width: 52px; height: 52px; }
+  .video-play svg { width: 20px; height: 20px; }
+}
