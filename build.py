@@ -216,7 +216,8 @@ for p in data["projects"]:
             f'<img src="../../assets/img/gallery/{p["slug"]}/{fname}" alt="{html.escape(p["title"])}" loading="lazy">'
             for fname in gallery
         )
-        gallery_html = f'<div class="project-gallery">{gallery_imgs}</div>'
+        tall = " gallery-tall" if p.get("gallery_aspect") == "2:3" else ""
+        gallery_html = f'<div class="project-gallery{tall}">{gallery_imgs}</div>'
 
     body = f"""<main class="wrap">
     <a class="back-link" href="../../index.html">&larr; back to portfolio</a>

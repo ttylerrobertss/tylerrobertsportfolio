@@ -568,3 +568,6 @@ img { max-width: 100%; display: block; }
 }
 
 
+
+/* Portrait-oriented galleries: 2:3 tiles so tall photos aren't cropped */
+.project-gallery.gallery-tall img { aspect-ratio: 2 / 3; }
