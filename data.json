@@ -377,11 +377,12 @@
   {
    "slug": "innervision",
    "title": "Inner Vision",
-   "desc": "",
+   "desc": "Photo and video content crafted for Inner Vision's social media and website. Shot on a variety of formats, including Super 16 film and digital, to capture the earthy, organic feel of the brand.",
    "thumb": "",
    "film_formats": [
-    "16mm",
-    "Super 8"
+    "Super 16",
+    "Super 8",
+    "Digital"
    ],
    "videos": [],
    "gallery": []
