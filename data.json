@@ -384,8 +384,14 @@
     "Super 8",
     "Digital"
    ],
-   "videos": [],
-   "gallery": []
+   "videos": [
+    {
+     "provider": "youtube",
+     "id": "hM6CgS6lJfA"
+    }
+   ],
+   "gallery": [],
+   "video_aspect": "2.4:1"
   }
  ],
  "bts": [

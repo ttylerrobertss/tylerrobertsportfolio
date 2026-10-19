@@ -137,7 +137,7 @@ with open(os.path.join(ROOT, "index.html"), "w") as f:
     ))
 
 # ---------- Project pages ----------
-def video_embed(video, title):
+def video_embed(video, title, aspect=None):
     provider, video_id = video["provider"], video["id"]
     if provider == "youtube":
         src = f"https://www.youtube-nocookie.com/embed/{video_id}"
@@ -147,7 +147,11 @@ def video_embed(video, title):
             src += f"?h={video['hash']}"
     else:
         return ""
-    return f"""<div class="video-wrap">
+    style = ""
+    if aspect and aspect != "9:16":
+        w, h = (float(n) for n in aspect.split(":"))
+        style = f' style="padding-bottom: {h / w * 100:.3f}%"'
+    return f"""<div class="video-wrap"{style}>
         <iframe src="{src}" title="{html.escape(title)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
       </div>"""
 
@@ -158,7 +162,7 @@ for p in data["projects"]:
     if len(videos) == 0:
         media = '<div class="no-video"><span>Coming soon</span></div>'
     elif len(videos) == 1:
-        media = video_embed(videos[0], p["title"])
+        media = video_embed(videos[0], p["title"], p.get("video_aspect"))
     else:
         embeds = "".join(video_embed(v, p["title"]) for v in videos)
         multi_cls = "video-multi video-vertical" if p.get("video_aspect") == "9:16" else "video-multi"
