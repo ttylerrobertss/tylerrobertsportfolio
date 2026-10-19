@@ -159,12 +159,24 @@ def video_embed(video, title, aspect=None, poster=None):
     if poster and provider == "youtube":
         play_src = f"{src}?autoplay=1&rel=0&playsinline=1"
         return f"""<div class="video-wrap video-facade"{style} data-src="{html.escape(play_src)}" data-title="{html.escape(title)}">
-        <img src="../../assets/img/posters/{poster}" alt="{html.escape(title)}">
+        <img src="../../assets/img/{poster}" alt="{html.escape(title)}" loading="lazy">
         <button class="video-play" type="button" aria-label="Play video"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg></button>
       </div>"""
     return f"""<div class="video-wrap"{style}>
         <iframe src="{src}" title="{html.escape(title)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
       </div>"""
+
+def single_poster(p):
+    """Poster for a one-video project: explicit video_poster, else the homepage thumbnail."""
+    if p.get("video_poster"):
+        return f"posters/{p['video_poster']}"
+    thumb = manifest["thumbs"].get(p["slug"])
+    return f"thumbs/{thumb}" if thumb else None
+
+def multi_poster(video):
+    """Poster for one video on a multi-video project (fetched by tools/fetch_posters.py)."""
+    name = f"posters/yt-{video['id']}.webp"
+    return name if os.path.exists(os.path.join(ROOT, "assets", "img", name)) else None
 
 for p in data["projects"]:
     videos = p.get("videos", [])
@@ -173,9 +185,9 @@ for p in data["projects"]:
     if len(videos) == 0:
         media = '<div class="no-video"><span>Coming soon</span></div>'
     elif len(videos) == 1:
-        media = video_embed(videos[0], p["title"], p.get("video_aspect"), p.get("video_poster"))
+        media = video_embed(videos[0], p["title"], p.get("video_aspect"), single_poster(p))
     else:
-        embeds = "".join(video_embed(v, p["title"]) for v in videos)
+        embeds = "".join(video_embed(v, p["title"], poster=multi_poster(v)) for v in videos)
         multi_cls = "video-multi video-vertical" if p.get("video_aspect") == "9:16" else "video-multi"
         media = f'<div class="{multi_cls}">{embeds}</div>'
 

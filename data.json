@@ -338,6 +338,26 @@
    ]
   },
   {
+   "slug": "innervision",
+   "title": "Inner Vision",
+   "desc": "Photo and video content crafted for Inner Vision's social media and website. Shot on a variety of formats, including Super 16 film and digital, to capture the earthy, organic feel of the brand.",
+   "thumb": "",
+   "film_formats": [
+    "Super 16",
+    "Super 8",
+    "Digital"
+   ],
+   "videos": [
+    {
+     "provider": "youtube",
+     "id": "hM6CgS6lJfA"
+    }
+   ],
+   "gallery": [],
+   "video_aspect": "2.4:1",
+   "video_poster": "innervision.webp"
+  },
+  {
    "slug": "bts",
    "title": "BTS",
    "desc": "ENJOY THE PROCESS",
@@ -397,26 +417,6 @@
    ],
    "gallery": [],
    "video_poster": "ignite.webp"
-  },
-  {
-   "slug": "innervision",
-   "title": "Inner Vision",
-   "desc": "Photo and video content crafted for Inner Vision's social media and website. Shot on a variety of formats, including Super 16 film and digital, to capture the earthy, organic feel of the brand.",
-   "thumb": "",
-   "film_formats": [
-    "Super 16",
-    "Super 8",
-    "Digital"
-   ],
-   "videos": [
-    {
-     "provider": "youtube",
-     "id": "hM6CgS6lJfA"
-    }
-   ],
-   "gallery": [],
-   "video_aspect": "2.4:1",
-   "video_poster": "innervision.webp"
   }
  ],
  "bts": [
